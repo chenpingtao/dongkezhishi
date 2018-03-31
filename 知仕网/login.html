@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>知仕网</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="box">
+
+            <div class="leftsidebar">
+                        <!--登录注册按钮!-->
+                        <div class="btn">
+                            <input id="btn1" type="button" value="注册" />
+                            <input id="btn2" type="button" value="登录" />
+                        </div>
+                        <!--注册!-->
+                        <div class="input" style="display:block">
+                            <P>用户名</P>
+                            <input class="user" name="user" onkeyup="checkuser();" type="test" placeholder="输入用户名..." autofocus required>
+                            <div class="error"></div>
+                            <p>密码</p>
+                            <input class="pass" name="pass" onkeyup="checkpass();" type="password" placeholder="输入密码" autofocus required>
+                            <div class="error"></div>
+                            <p>绑定邮箱</p>
+                            <input class="email" name="email" onkeyup="checkemail();" type="test" placeholder="123456780@example.com" autofocus required>
+                            <div class="error"></div>
+                            <input id="btn3" type="button" value="注册知仕网" />
+                        </div>
+                        <!--登录!-->
+                        <div class="input1">
+                            <P>用户名</P>
+                            <input class="user" name="user" onkeyup="reuser();" type="test" placeholder="输入用户名..." autofocus required>
+                            <div class="error"></div>
+                            <p>密码</p>
+                            <input class="pass" name="pass" onkeyup="repass();" type="password" placeholder="输入密码" autofocus required>
+                            <div class="error"></div>
+                            <input id="btn4" type="button" value="登录" />
+
+                            <a href="">忘记密码？</a>
+                        </div>
+                        <!-- 登陆结束 -->
+                </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

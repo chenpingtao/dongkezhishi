@@ -1,0 +1,105 @@
+html,body {
+    height: 100%;
+}
+.box {
+    background:url("../images/bg-login.png") no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height:100%;
+}
+
+.leftsidebar {
+    width: 480px;
+    height: 500px;
+    border:2px solid #ccc;
+    background:#fff;
+    border-radius: 20px;
+    margin:60px auto;
+}
+
+.btn {
+    width: 480px;
+    height: 50px;
+    margin: 0 auto;
+    text-align:center;
+    margin-top: 10px;
+}
+
+#btn1,#btn2 {
+    box-sizing: border-box;
+}
+
+#btn1,#btn2 {
+    outline:0;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #666;
+    background: #ffffff;
+    border: 1px solid #666;
+    border-radius: 10px;
+}
+
+#btn1:hover,#btn2:hover  {
+    color:#fff;
+    background: #41759d;
+    cursor: pointer;
+}
+.input{
+    width:300px;
+    height:auto;
+    margin:0 auto;
+    margin-top:15px;
+    display:black;
+}
+.error{
+    width:300px;
+    color:red;
+    height:20px;
+    line-height:20px;
+    font-size:12px;
+}
+.input p{
+    display:block;
+}
+.user,.pass,.email,.brithday{
+    width:300px;
+    height:40px;
+    line-height:30px;
+    font-size:14px;
+    color: #666;
+    border-bottom: 1px solid #666;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    outline:0px;
+}
+#btn3,#btn4{
+    display:block;
+    width:150px;
+    height:45px;
+    line-height:45px;
+    font-size:14px;
+    color: #fff;
+    background:#41759d;
+    border: 1px solid #666;
+    border-radius: 10px;
+    cursor:pointer;
+    outline:0px;
+    margin:0 auto;
+}
+.input1{
+    width:300px;
+    height:auto;
+    margin:0 auto;
+    margin-top:15px;
+    display:none;
+}
+.input1 a{
+    text-decoration: none;
+    font-size:12px;
+    color:black;
+}

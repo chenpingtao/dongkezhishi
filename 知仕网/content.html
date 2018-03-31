@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>知仕网</title>
+	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/content.css">
+    <script src="bootstrap/dist/js/jquery.min.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<script>
+		function showHint(str)
+		{
+			if (str.length==0)
+			{ 
+				document.getElementById("txtHint").innerHTML="";
+				return;
+			}
+			if (window.XMLHttpRequest)
+			{
+				// IE7+, Firefox, Chrome, Opera, Safari 浏览器执行的代码
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{    
+				//IE6, IE5 浏览器执行的代码
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function()
+			{
+				if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+				}
+			}
+			xmlhttp.open("GET","refer.php?q="+str,true);
+			xmlhttp.send();
+		}
+	</script>
+
+</head>
+
+<body>
+<div id="pic" >
+	<img src="images/1.jpg" alt="" height="570" width="100%">
+	<P id="text">政府人事任免 一搜你就知道</P>
+	<div class="center">
+	<form id="fm" method="post" action="../refer.php">
+				
+	<input class="search"type="test"placeholder="请输入职位或官名"autofocus required name="conment" value=""/>
+	<input id="btn" type="submit" value="搜索" /><a href="search.html" target="iframe_a"></a>
+</form>
+	</div>
+</div>
+
+<div id="news">
+	<div class="xin">
+		<P class="text-left">最新任职信息</P>
+	</div>
+		<div class="wen">
+			<ul>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+				<li class="li"><a href="#" target="iframe_a">湖南省市长任职于哪里哪里</a><span class="time">2018/3/24</span></li>
+			</ul>
+	</div>
+
+	<div class="" id="page">
+		<ul class="pagination">
+		<li><a href="#">&laquo;</a></li>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+</div>
+</div>
+</body>
+
+</html>

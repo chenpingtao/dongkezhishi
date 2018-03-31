@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.content{}
+
+/*要闻标题样式*/
+.channel_tab {margin: 0 auto; background: #41759D; border-bottom: none; padding-bottom: 0px; line-height: 40px;height: 40px; margin-bottom:15px;}
+.channel_tab a{ font-size:22px;font-family: "微软雅黑","宋体"; color: white;}
+/*要闻列表*/
+.news_box{ margin: 0 auto; border:1px solid #dddddd; padding:0 22px; *padding-bottom:40px;}
+.news_box .list{ border-bottom:1px solid #dddddd;}
+.news_box .list_1 ul {padding: 15px 0;}
+.news_box .list li{ line-height:36px; background:url(../images/public/point.jpg) no-repeat left 17px; padding-left:12px;}
+.news_box .list a{ font-size:15px; background:none; padding-left:0px; }
+.news_box .list a:hover{ text-decoration:underline; color:#024886;}
+.news_box .list span{ font-size:12px;}
+.news_box .current{ border:0;}
+/*更多的样式*/
+.news_box a.zl_more{ margin:30px auto 40px;}
+
+.news_box li.line {
+border-bottom: 1px #dddddd solid;
+margin-bottom: 15px;
+padding:0 0 15px 12px;
+}
+.channel_tab .span1 {background: none;color: #666666;font-size: 14px;font-family: "微软雅黑", "宋体";}
